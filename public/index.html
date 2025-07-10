@@ -6,7 +6,18 @@
   <title>Transcriptor YouTube</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+
+  <nav class="w-full bg-blue-700 text-white px-6 py-4 shadow mb-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">YouTube Transcriptor</h1>
+      <div class="space-x-4">
+        <a href="/index.html" class="hover:underline">Transcribir video</a>
+        <a href="/canal.html" class="hover:underline">Transcribir canal</a>
+      </div>
+    </div>
+  </nav>
+
   <h1 class="text-3xl font-bold mb-6">Transcriptor de Videos de YouTube</h1>
 
   <form id="form" class="w-full max-w-lg bg-white p-6 rounded shadow">
@@ -21,7 +32,6 @@
     id="resultado"
     class="mt-6 w-full max-w-3xl bg-white p-6 rounded shadow whitespace-pre-wrap"
   ></div>
-
   <script src="script.js"></script>
 </body>
 </html>

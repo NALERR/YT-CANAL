@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transcriptor de Canal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-blue-700 text-white px-6 py-4 shadow mb-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">YouTube Transcriptor</h1>
+      <div class="space-x-4">
+        <a href="/index.html" class="hover:underline">Transcribir video</a>
+        <a href="/canal.html" class="hover:underline font-semibold underline">Transcribir canal</a>
+      </div>
+    </div>
+  </nav>
+
+  <h2 class="text-2xl font-semibold mb-4">Transcribir todos los videos de un canal</h2>
+
+  <form id="canal-form" class="bg-white p-6 rounded shadow w-full max-w-lg">
+    <label for="canal-url" class="block mb-2 font-semibold">URL del canal:</label>
+    <input type="text" id="canal-url" name="canal-url" required placeholder="https://www.youtube.com/@nombre"
+      class="w-full border border-gray-300 p-2 rounded mb-4" />
+    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">
+      Transcribir canal
+    </button>
+  </form>
+
+  <div id="canal-resultado" class="mt-6 w-full max-w-3xl bg-white p-6 rounded shadow whitespace-pre-wrap"></div>
+
+  <script src="/canal-script.js"></script>
+</body>
+</html>
