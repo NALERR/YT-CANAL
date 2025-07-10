@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transcriptor YouTube</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+  <h1 class="text-3xl font-bold mb-6">Transcriptor de Videos de YouTube</h1>
+
+  <form id="form" class="w-full max-w-lg bg-white p-6 rounded shadow">
+    <label for="url" class="block mb-2 font-semibold">URL del video de YouTube:</label>
+    <input type="text" id="url" name="url" placeholder="https://www.youtube.com/watch?v=..." required class="w-full p-2 border border-gray-300 rounded mb-4"
+    />
+    <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition"
+    > Transcribir </button>
+  </form>
+
+  <div
+    id="resultado"
+    class="mt-6 w-full max-w-3xl bg-white p-6 rounded shadow whitespace-pre-wrap"
+  ></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
